@@ -1,0 +1,1115 @@
+{
+	"info": {
+		"_postman_id": "26970b91-e6d3-4dbb-9d6e-9c1127e199cc",
+		"name": "Pangan kita - Cloud Computing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Machine Learning",
+			"item": [
+				{
+					"name": "api/ml/predictions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/D:/CAPSTONE/MACHINE LEARNING/Images/valid/10. Pempek/Pempek-4_jpg.rf.441df6a8f2a8ff6f949401c70363eb07.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://classification-api-xglaudyh2q-et.a.run.app/api/ml/predictions",
+							"protocol": "https",
+							"host": [
+								"classification-api-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"ml",
+								"predictions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/D:/CAPSTONE/MACHINE LEARNING/Images/valid/10. Pempek/Pempek-4_jpg.rf.441df6a8f2a8ff6f949401c70363eb07.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "https://classification-api-xglaudyh2q-et.a.run.app/api/ml/predictions",
+									"protocol": "https",
+									"host": [
+										"classification-api-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"ml",
+										"predictions"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "806b520097b2168d648bfdf1cda93f74;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:08:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "873"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": \"SUCCESS\",\n    \"data\": {\n        \"filename\": \"Pempek-4_jpg.rf.441df6a8f2a8ff6f949401c70363eb07.jpg\",\n        \"prediction\": \"10. Pempek\",\n        \"probability\": \"[0.0003289919113740325, 0.0003668834688141942, 5.2776176744373515e-05, 0.0016517419135197997, 5.987746590108145e-06, 0.00012545390927698463, 0.00026658715796656907, 0.0016065245727077127, 0.004167558625340462, 0.3585241436958313, 0.09316723048686981, 6.781780393794179e-05, 3.28163378071622e-06, 0.010714524425566196, 0.0004901562933810055, 0.005600257311016321, 0.0020334594883024693, 0.0004826399963349104, 0.02669605240225792, 0.0012566311052069068, 0.17438144981861115, 0.0017235419945791364, 0.31365084648132324, 6.997397576924413e-07, 0.0019547815900295973, 1.6967454996574816e-07, 7.134983661671868e-06, 0.0005666719516739249, 8.89342263690196e-05, 4.686690317612374e-06, 1.2361003427940886e-05]\"\n    },\n    \"message\": \"Prediction successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "api/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"username\": \"Arya bangkit cc123\",\n    \"password\": \"bangkitcc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"username\": \"Arya bangkit cc\",\n    \"password\": \"bangkitcc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/login",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "fc1654147f0eba9c09107a32eddfe8f4;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:09:03 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "533"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODk0Mjk0MywianRpIjoiNjMzOGY5ODMtZTRkMS00M2VmLWEyNTQtOWFjZjJiMWYxZTA5IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCBjYyIsImVtYWlsIjoiYXJ5YTIzNEBnbWFpbC5jb20ifSwibmJmIjoxNzE4OTQyOTQzLCJjc3JmIjoiYmYyMmNhNzUtMTI5Ny00YmY5LTg0ZjQtZGNjZTVjOWI3NTk0IiwiZXhwIjoxNzE4OTQzODQzfQ.hPlHuptsDX7IrNy8GO3BSqDkq0KFJLg6hUCuCLyaO5c\",\n        \"email\": \"arya234@gmail.com\",\n        \"id\": 10,\n        \"username\": \"Arya bangkit cc\"\n    },\n    \"message\": \"Login successful\"\n}"
+						},
+						{
+							"name": "-",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n   \"username\": \"Arya bangkit cc123\",\n    \"password\": \"bangkitcc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/login",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "3500631ef8dd8724603b1813a9403f02;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:09:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 401,\n    \"message\": \"Invalid credentials\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/auth/register",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"Aryagunawan@example123.com\",\n    \"username\": \"Aryaa\",\n    \"password\": \"bangkitcc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"arya678@gmail.com\",\n    \"username\": \"Arya bangkit cloud\",\n    \"password\": \"bangkit cc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/register",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "9b824dcf9bfc2a0fbcde15217aef29f6;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:12:44 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"message\": \"User registered successfully\"\n}"
+						},
+						{
+							"name": "-",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"arya678@gmail.com\",\n    \"username\": \"Arya bangkit cloud\",\n    \"password\": \"bangkit cc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/auth/register",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "8b59de56bfe03a54d133922fe220b7fd;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:13:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "46"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 400,\n    \"message\": \"Email already exists\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Food",
+			"item": [
+				{
+					"name": "api/food/all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/search?q=t",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "t"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/search?q=t",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "t"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "b9a02fafff343030e86df18654eca0d9;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:15:37 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4708"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamin C and K\"\n            ],\n            \"description\": \"kale is one snack that is rich in nutrients, such as antioxidants, vitamin C, beta carotene, and vitamin K\",\n            \"id\": 1,\n            \"name\": \"kale vegetables\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/kale.jpg\",\n            \"price\": 15000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamin C and A\"\n            ],\n            \"description\": \"beets contain fiber, folate, phosphorus, as well as vitamins C and A\",\n            \"id\": 2,\n            \"name\": \"beetroot vegetable\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/beetrootvegetable.jpg\",\n            \"price\": 30000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"antioxidants and vitamin K\"\n            ],\n            \"description\": \"this green vegetable is high in antioxidants and vitamin K\",\n            \"id\": 3,\n            \"name\": \"spinach vegetable\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/spinachvegetable.jpg\",\n            \"price\": 10000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamins C,to iron\"\n            ],\n            \"description\": \"broccoli contains fiber, vitamin C, K, potassium, and iron\",\n            \"id\": 4,\n            \"name\": \"broccoli vegetable\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/broccolivegetable.jpg\",\n            \"price\": 40000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamin A, K, C\"\n            ],\n            \"description\": \"carrots contain carbohydrates, fiber, and protein. In addition, this healthy food is also high in iron, vitamins A, K, and C\",\n            \"id\": 5,\n            \"name\": \"carrots\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/carrots.jpg\",\n            \"price\": 14500,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"vitamin A, B, E.\"\n            ],\n            \"description\": \"the chemical contents contained in candlenuts are glycerides, linolet, palmitic, stearic, myristic acids, oil acids, proteins, vitamin B1, and fatty substances \",\n            \"id\": 9,\n            \"name\": \"candlenut\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/candlenut.jpg\",\n            \"price\": 33900,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"meats\",\n            \"contents\": [\n                \"protein and fat\"\n            ],\n            \"description\": \"goat meat contains more protein and iron than beef. This makes goat meat a good choice for those of you who are looking for healthy red meat and want to maintain your weight\",\n            \"id\": 11,\n            \"name\": \"mutton\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/mutton.jpg\",\n            \"price\": 67180,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fish\",\n            \"contents\": [\n                \"vitamin A\"\n            ],\n            \"description\": \"it contains calcium, iron, protein, and vitamin A. The benefits of these nutrients include maintaining cholesterol, preventing cancer, and boosting immunity.\",\n            \"id\": 14,\n            \"name\": \"tilapia\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/tilapia.jpg\",\n            \"price\": 30000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"grains\",\n            \"contents\": [\n                \"vitamin B\"\n            ],\n            \"description\": \"carbs\",\n            \"id\": 16,\n            \"name\": \"wheat\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/wheat.jpg\",\n            \"price\": 25000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"meats\",\n            \"contents\": [\n                \"vitamin B12 and D\"\n            ],\n            \"description\": \"a number of nutrients such as calcium, magnesium, phosphorus, potassium, sodium, as well as some vitamin C, vitamin B1\",\n            \"id\": 18,\n            \"name\": \"chicken meat\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/chickenmeat.jpg\",\n            \"price\": 30000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"meats\",\n            \"contents\": [\n                \"protein and fat\"\n            ],\n            \"description\": \"has a high content of protein, fat and biochemicals\",\n            \"id\": 19,\n            \"name\": \"buffalo meat\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/buffalomeat.jpg\",\n            \"price\": 79000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fruits\",\n            \"contents\": [\n                \"vitamin C\"\n            ],\n            \"description\": \"contains vitamin C and lycopene which are proven to reduce the number of cancer cells in the body. can prevent cancer by protecting cells from free radical damage\",\n            \"id\": 23,\n            \"name\": \"dragon fruit\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/dragonfruit.jpg\",\n            \"price\": 40000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fish\",\n            \"contents\": [\n                \"vitamin D\"\n            ],\n            \"description\": \"containing omega3s, tuna is known to contain a variety of important nutrients that the body needs, such as vitamin D, calcium, potassium, choline, zinc, and phosphorus\",\n            \"id\": 25,\n            \"name\": \"tuna fish\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/tunafish.jpg\",\n            \"price\": 79500,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"grains\",\n            \"contents\": [\n                \"carbs\"\n            ],\n            \"description\": \"it is high in fiber which also contains various important nutrients for the body and then Nutrients include protein and carbohydrates\",\n            \"id\": 26,\n            \"name\": \"oats\",\n            \"photo\": \"oats.jpg\",\n            \"price\": 23000,\n            \"whatsapp_number\": \"6282122506110\"\n        }\n    ],\n    \"message\": \"Foods retrieved successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/food/categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/categories",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/categories?trrttr=10",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"categories"
+									],
+									"query": [
+										{
+											"key": "trrttr",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "2f044f2d7c5d48e69789016d1abae421;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:16:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "664"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"vegetables\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/vegetables.jpg\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"spices\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/spices.jpg\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"meats\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/meats.jpg\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"fruits\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/fruits.jpg\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"fish\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/fish.jpg\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"grains\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/grains.jpg\"\n        }\n    ],\n    \"message\": \"Categories retrieved successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/food/category/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/category/0",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"category",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/category/2",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"category",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "6bb8c621b7c1f5e31c217801cfa9105b;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:20:09 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1643"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"vitamin K\"\n            ],\n            \"description\": \"pepper is often used as a spice in making soups and various stir-fries, which contains iron (Fe), vitamin K, manganese, piperine, piperidine, starch, protein, fat, piperic acid, chavisin, felanden, cariolylene and terpenes\",\n            \"id\": 6,\n            \"name\": \"pepper\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/pepper.jpg\",\n            \"price\": 28275,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"eugenol acetate\"\n            ],\n            \"description\": \"cloves are often used as a cough medicine, especially coughing up phlegm. The eugenol content in cloves has expectorant properties\",\n            \"id\": 7,\n            \"name\": \"cloves\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/cloves.jpg\",\n            \"price\": 20000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"alfaterpineol\"\n            ],\n            \"description\": \"contains antimicrobial compounds, such as linalool, eugenol, cinnamaldehyde, and alpha-terpineol that can eradicate microorganisms that cause dental caries and oral candidiasis\",\n            \"id\": 8,\n            \"name\": \"cinnamon\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/cinnamon.jpg\",\n            \"price\": 36000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"vitamin A, B, E.\"\n            ],\n            \"description\": \"the chemical contents contained in candlenuts are glycerides, linolet, palmitic, stearic, myristic acids, oil acids, proteins, vitamin B1, and fatty substances \",\n            \"id\": 9,\n            \"name\": \"candlenut\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/candlenut.jpg\",\n            \"price\": 33900,\n            \"whatsapp_number\": \"6282122506110\"\n        }\n    ],\n    \"message\": \"Foods in category 'spices' retrieved successfully\"\n}"
+						},
+						{
+							"name": "-",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/category/0",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"category",
+										"0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "63b38e6093ce9312b556e3459a906fba;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:20:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Not Found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/food/detail/food_id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/detail/5",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"detail",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/detail/8",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"detail",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "ef4208a136fb9467b23efd4c85c0b04c;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:21:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "462"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": {\n        \"category\": \"spices\",\n        \"contents\": [\n            \"alfaterpineol\"\n        ],\n        \"description\": \"contains antimicrobial compounds, such as linalool, eugenol, cinnamaldehyde, and alpha-terpineol that can eradicate microorganisms that cause dental caries and oral candidiasis\",\n        \"id\": 8,\n        \"name\": \"cinnamon\",\n        \"photo\": \"https://storage.googleapis.com/image-backend/uploads/cinnamon.jpg\",\n        \"price\": 36000,\n        \"whatsapp_number\": \"6282122506110\"\n    },\n    \"message\": \"Food detail retrieved successfully\"\n}"
+						},
+						{
+							"name": "-",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/detail/0",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"detail",
+										"0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "11ba38a65ec5fe0ea0ef3b0a4e64d61d"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:21:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 404,\n    \"message\": \"Not Found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "api/food/photo/:filename",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODg2ODQ5NSwianRpIjoiM2RhZWVlMGEtZjViNS00N2YzLWJiZDMtMmZkYjk2Y2QwNjFlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4Njg0OTUsImNzcmYiOiI3M2IyN2VlMC00OGUwLTRiOWYtOGI0MC05ZGJkMzYxOWE3NTEiLCJleHAiOjE3MTg4NjkzOTV9.HIJjohLJid6_r_MHFDpnhFtsNeryajTg7sMATq0X6g0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/photo/kale.jpg",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"photo",
+								"kale.jpg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/food/search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxODgxMDgzMywianRpIjoiZjQxMmEyNDEtMDFlOS00OTBkLTlhNzMtY2MzMWExNzdlYzM2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJ1c2VybmFtZSI6IkFyeWEgYmFuZ2tpdCIsImVtYWlsIjoiQXJ5YWd1bmF3YW4xMjM0QGdtYWlsLmNvbSJ9LCJuYmYiOjE3MTg4MTA4MzMsImNzcmYiOiJjY2YyMGU2ZC1iMjAxLTQxYWYtYWFkNi1jMjgwNmM5YjlkMjgiLCJleHAiOjE3MTg4MTE3MzN9.P9WSOnnnaMtN_Mvi32nYSCGdKtQzII-LYSbxNAh7moQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/search?q=o",
+							"protocol": "https",
+							"host": [
+								"backend-xglaudyh2q-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"api",
+								"food",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "o"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "+",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/search?q=o",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "o"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "897192f247d58e62ceba3433728b877a;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:23:02 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "4558"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamin C and A\"\n            ],\n            \"description\": \"beets contain fiber, folate, phosphorus, as well as vitamins C and A\",\n            \"id\": 2,\n            \"name\": \"beetroot vegetable\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/beetrootvegetable.jpg\",\n            \"price\": 30000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamins C,to iron\"\n            ],\n            \"description\": \"broccoli contains fiber, vitamin C, K, potassium, and iron\",\n            \"id\": 4,\n            \"name\": \"broccoli vegetable\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/broccolivegetable.jpg\",\n            \"price\": 40000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"vegetables\",\n            \"contents\": [\n                \"vitamin A, K, C\"\n            ],\n            \"description\": \"carrots contain carbohydrates, fiber, and protein. In addition, this healthy food is also high in iron, vitamins A, K, and C\",\n            \"id\": 5,\n            \"name\": \"carrots\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/carrots.jpg\",\n            \"price\": 14500,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"eugenol acetate\"\n            ],\n            \"description\": \"cloves are often used as a cough medicine, especially coughing up phlegm. The eugenol content in cloves has expectorant properties\",\n            \"id\": 7,\n            \"name\": \"cloves\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/cloves.jpg\",\n            \"price\": 20000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"spices\",\n            \"contents\": [\n                \"alfaterpineol\"\n            ],\n            \"description\": \"contains antimicrobial compounds, such as linalool, eugenol, cinnamaldehyde, and alpha-terpineol that can eradicate microorganisms that cause dental caries and oral candidiasis\",\n            \"id\": 8,\n            \"name\": \"cinnamon\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/cinnamon.jpg\",\n            \"price\": 36000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"meats\",\n            \"contents\": [\n                \"protein and fat\"\n            ],\n            \"description\": \"goat meat contains more protein and iron than beef. This makes goat meat a good choice for those of you who are looking for healthy red meat and want to maintain your weight\",\n            \"id\": 11,\n            \"name\": \"mutton\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/mutton.jpg\",\n            \"price\": 67180,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fish\",\n            \"contents\": [\n                \"vitamin B12\"\n            ],\n            \"description\": \"the nutrients present in salmon are several minerals such as potassium, selenium, and vitamin B-12. Another content that is considered the most useful in salmon is omega-3 fatty acids\",\n            \"id\": 15,\n            \"name\": \"salmon fish\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/salmonfish.jpg\",\n            \"price\": 160000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"meats\",\n            \"contents\": [\n                \"protein and fat\"\n            ],\n            \"description\": \"has a high content of protein, fat and biochemicals\",\n            \"id\": 19,\n            \"name\": \"buffalo meat\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/buffalomeat.jpg\",\n            \"price\": 79000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fruits\",\n            \"contents\": [\n                \"vitamin C\"\n            ],\n            \"description\": \"contains essential nutrients such as vitamin C, calcium, and vitamin D, all of which are important for healthy bone growth\",\n            \"id\": 21,\n            \"name\": \"oranges\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/oranges.jpg\",\n            \"price\": 15000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fruits\",\n            \"contents\": [\n                \"vitamin A and C\"\n            ],\n            \"description\": \"mangoes also contain various essential nutrients, including vitamin C, vitamin A, dietary fiber. The natural sugar content in mangoes provides good energy for the body\",\n            \"id\": 22,\n            \"name\": \"mango\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/mango.jpg\",\n            \"price\": 35000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fruits\",\n            \"contents\": [\n                \"vitamin C\"\n            ],\n            \"description\": \"contains vitamin C and lycopene which are proven to reduce the number of cancer cells in the body. can prevent cancer by protecting cells from free radical damage\",\n            \"id\": 23,\n            \"name\": \"dragon fruit\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/dragonfruit.jpg\",\n            \"price\": 40000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"fish\",\n            \"contents\": [\n                \"calories, fat, protein and calcium\"\n            ],\n            \"description\": \"is rich in nutrients and has calories, fat and protein that are good for the body\",\n            \"id\": 24,\n            \"name\": \"gourami fish\",\n            \"photo\": \"https://storage.googleapis.com/image-backend/uploads/gouramifish.jpg\",\n            \"price\": 45000,\n            \"whatsapp_number\": \"6282122506110\"\n        },\n        {\n            \"category\": \"grains\",\n            \"contents\": [\n                \"carbs\"\n            ],\n            \"description\": \"it is high in fiber which also contains various important nutrients for the body and then Nutrients include protein and carbohydrates\",\n            \"id\": 26,\n            \"name\": \"oats\",\n            \"photo\": \"oats.jpg\",\n            \"price\": 23000,\n            \"whatsapp_number\": \"6282122506110\"\n        }\n    ],\n    \"message\": \"Foods retrieved successfully\"\n}"
+						},
+						{
+							"name": "-",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://backend-xglaudyh2q-et.a.run.app/api/food/search?q=50",
+									"protocol": "https",
+									"host": [
+										"backend-xglaudyh2q-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"api",
+										"food",
+										"search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "50"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-Cloud-Trace-Context",
+									"value": "9d4b01c1b7d22db67b3bd15f3549e464;o=1"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 21 Jun 2024 04:23:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Google Frontend"
+								},
+								{
+									"key": "Content-Length",
+									"value": "64"
+								},
+								{
+									"key": "Alt-Svc",
+									"value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 200,\n    \"data\": [],\n    \"message\": \"Foods retrieved successfully\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
